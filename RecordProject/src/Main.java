@@ -1,19 +1,19 @@
 public class Main {
     public static void main(String[] args) {
         for (int i = 1; i <= 5; i++) {
-            Student s = new Student("s289000" + i,
+            Student s = new Student("s100" + i,
                     switch (i) {
-                        case 1 -> "Mary";
-                        case 2 -> "Carole";
-                        case 3 -> "Henry";
-                        case 4 -> "Thomas";
-                        case 5 -> "Josh";
-                        default -> "Aliean";
+                        case 1 -> "Marlin";
+                        case 2 -> "Jole";
+                        case 3 -> "Ellie";
+                        case 4 -> "Ana";
+                        case 5 -> "Tommy";
+                        default -> "Clicker";
                     },
-                    "9/12/1996",
-                    "Java Master Class"
+                    "12/12/1996",
+                    "java master class"
                     );
-        System.out.println(s);
+            System.out.println(s);
         }
     }
 }

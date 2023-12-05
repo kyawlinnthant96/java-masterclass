@@ -1,14 +1,14 @@
 public class Student {
     private String id;
     private String name;
-    private String dateOfBirth;
-    private String classList;
+    private String email;
+    private String classLists;
 
-    public Student(String id,String name, String dateOfBirth, String classList) {
+    public Student(String id, String name, String email, String classLists) {
         this.id = id;
         this.name = name;
-        this.dateOfBirth = dateOfBirth;
-        this.classList = classList;
+        this.email = email;
+        this.classLists = classLists;
     }
 
     @Override
@@ -16,8 +16,8 @@ public class Student {
         return "Student{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", classList='" + classList + '\'' +
+                ", email='" + email + '\'' +
+                ", classLists='" + classLists + '\'' +
                 '}';
     }
 }
