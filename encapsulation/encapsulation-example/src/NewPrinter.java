@@ -20,7 +20,7 @@ public class NewPrinter {
 
     public int printPages(int pages) {
         int jobPages = (duplex) ? (pages / 2) + (pages % 2) : pages;
-        
+
         pagePrinted += jobPages;
         return jobPages;
     }
