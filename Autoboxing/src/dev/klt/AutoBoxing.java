@@ -1,5 +1,7 @@
 package dev.klt;
 
+import java.util.ArrayList;
+
 public class AutoBoxing {
     public static void main(String[] args) {
         Integer boxedInt = Integer.valueOf(15); // prefer but unnecessary
@@ -13,8 +15,24 @@ public class AutoBoxing {
         Double resultBoxed = getDoubleLiteralObject();
         double resultUnboxed = getDoubleObject();
 
+        var ourList = getList(1,2,4,5);
+        System.out.println(ourList);
+    }
 
+    private static ArrayList<Integer> getList(int... varargs) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int var : varargs) {
+            list.add(var);
+        }
+        return list;
+    }
 
+    private static Integer returnInt(int i) {
+        return i;
+    }
+
+    private static int returnAnint(Integer i) {
+        return i;
     }
 
     private static Double getDoubleObject() {
